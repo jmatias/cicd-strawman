@@ -3,8 +3,10 @@ name: "Main pipeline"
 on:
   workflow_dispatch:
   push:
-    branches:
-      - main
+    # branches:
+      # - main
+    tags:
+      - 'v*'
 jobs:
 
   unit_tests:
